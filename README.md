@@ -5,7 +5,7 @@ You can also edit the replacement text by declaring a `prompt_dirtrim_text` univ
 
 ### Installation
 
-Run the install.sh script, it will copy the function into `~/.config/fish/functions/` and open your `config.fish` for you.
+Run the `install.sh` script, it will copy the function into `~/.config/fish/functions/` and open your `config.fish` for you.
 
 Usage example,
 
