@@ -22,9 +22,9 @@ function prompt_dirtrim -d "Trim the prompt_pwd length into the specified count"
 
 	if test $pwd_length -gt $trim_length
 		set -l trim_count (math $pwd_length - $trim_length)
-		echo (string replace -r '/(.[^/]+/){'"$trim_count"'}' \
+		echo (string replace -r '(/|~/)(.[^/]*/){'"$trim_count"'}' \
 		''"$replacement_str"'/' (prompt_pwd))
-	else if [ $pwd_length -lt $trim_length ]
+	else if [ $pwd_length -le $trim_length ]
 		echo (prompt_pwd)
 	end
 
