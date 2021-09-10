@@ -26,10 +26,13 @@ The snippet above will assign the retained 2 trailing directory components into 
 
 It will also replace the hidden text with '-'.
 
-```without prompt_dirtrim
+Without prompt_dirtrim:
+```
 ~/foo/bar/baz $ 
 ```
-```with prompt_dirtrim
+
+With prompt_dirtrim:
+```
 -/bar/baz $ 
 ```
 
